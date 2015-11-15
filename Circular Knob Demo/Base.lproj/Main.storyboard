@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXo-2Q-jUo" userLabel="position">
-                                <rect key="frame" x="-17" y="100" width="354" height="64"/>
+                                <rect key="frame" x="73" y="100" width="178" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -28,8 +28,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fus-W3-P5E" userLabel="Controls">
                                 <rect key="frame" x="0.0" y="160" width="320" height="320"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rsz_knob1.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-i1-Gu4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_knob1.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-i1-Gu4">
+                                        <rect key="frame" x="5" y="5" width="310" height="310"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUf-fb-kOk">
                                         <rect key="frame" x="90" y="127" width="140" height="66"/>
@@ -39,8 +39,11 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="b6T-i1-Gu4" firstAttribute="leading" secondItem="Fus-W3-P5E" secondAttribute="leading" constant="5" id="2qx-jR-dXR"/>
                                     <constraint firstAttribute="width" constant="320" id="8Rp-By-d29"/>
+                                    <constraint firstAttribute="bottom" secondItem="b6T-i1-Gu4" secondAttribute="bottom" constant="5" id="9hU-h9-aSj"/>
                                     <constraint firstAttribute="height" constant="320" id="KZ8-wC-EgP"/>
+                                    <constraint firstAttribute="trailing" secondItem="b6T-i1-Gu4" secondAttribute="trailing" constant="5" id="XZz-aO-CMv"/>
                                     <constraint firstAttribute="centerY" secondItem="b6T-i1-Gu4" secondAttribute="centerY" id="bX4-SJ-03q"/>
                                     <constraint firstAttribute="centerX" secondItem="b6T-i1-Gu4" secondAttribute="centerX" id="mH8-2q-lOW"/>
                                 </constraints>
@@ -53,6 +56,12 @@
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="-1" height="-1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXl-uY-N0t">
+                                <rect key="frame" x="238" y="117" width="53" height="30"/>
+                                <state key="normal" title="confirm">
+                                    <color key="titleColor" red="1" green="0.90682713478135613" blue="0.35287419541078102" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28260532020000001" green="0.420103848" blue="0.59464776519999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
